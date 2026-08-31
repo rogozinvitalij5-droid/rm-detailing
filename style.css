@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Fat Grot";
     src: url("./font.ttf") format("truetype");
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
@@ -60,7 +60,7 @@ order: 2;}
 color: gold;
 text-decoration: none;
 font-size: 20px;
-font-weight: bold;}
+font-weight: normal;}
 .navigation a::after{
 content: "";
 position: absolute;
@@ -150,7 +150,7 @@ margin-bottom: 40px;}
 }
 .price {
     color: gold;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 24px;
 }
 .logo img {
@@ -394,6 +394,6 @@ align-items: center;
 .about h3:last-of-type + p {
     color: gold;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: normal;
     text-shadow: none;
 }
