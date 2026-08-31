@@ -37,12 +37,12 @@ font-size: 20px;}
     border: 2px solid gold;
     border-radius: 12px;
     flex: 1;
-    box-shadow: 0 5px 15px gray;
+    box-shadow: none;
     transition: 0.3s;
     background-color: #111;
 }
 .card:hover{transform: translateY(-5px);
-box-shadow: 0 10px 25px gold;}
+box-shadow: none;}
 .cards{display: flex;
 gap:20px;
 justify-content: center;
@@ -80,7 +80,6 @@ padding: 15px 30px;
 border-radius: 10px;
 text-decoration: none;
 transition: 0.3s;
-box-shadow: 0 0 15px gold;
 }
 .button:hover {
 background-color: white;
@@ -112,7 +111,7 @@ margin: 80px auto;
 padding: 40px;
 max-width: 800px;
 border: 2px solid gold;
-box-shadow: 0 5px 20px gray;}
+box-shadow: none;}
 .about h2,
 .contacts h2 {
 font-size: 40px;
@@ -243,11 +242,10 @@ margin-bottom: 40px;}
 
     .button {
         padding: 12px 25px;
-        box-shadow: 0 0 8px gold;
+        box-shadow: none;
     }
 
     .button:hover {
-        box-shadow: 0 0 12px gold;
         transform: scale(1.03);
     }
 
@@ -345,10 +343,9 @@ font-size: 20px;
 transition: 0.3s;
 }
 .social-buttons a:hover {
-background-color: gold;
-color: black;
-transform: translateY(-3px);
-box-shadow: 0 0 15px gold;
+    background-color: gold;
+    color: black;
+    transform: translateY(-3px);
 }
 @media (max-width: 600px) {
 .social-buttons {
@@ -365,7 +362,7 @@ align-items: center;
     max-width: 900px;
     border: 1px solid gold;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+    box-shadow: none;
 }
 
 .about h2 {
