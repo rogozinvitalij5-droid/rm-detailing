@@ -299,3 +299,36 @@ margin-bottom: 40px;}
         font-size: 18px;
     }
 }
+
+.social-buttons {
+display: flex;
+justify-content: center;
+gap: 15px;
+margin: 30px auto;
+flex-wrap: wrap;
+}
+.social-buttons a {
+display: inline-block;
+padding: 12px 25px;
+border: 2px solid gold;
+border-radius: 10px;
+color: gold;
+text-decoration: none;
+font-size: 20px;
+transition: 0.3s;
+}
+.social-buttons a:hover {
+background-color: gold;
+color: black;
+transform: translateY(-3px);
+box-shadow: 0 0 15px gold;
+}
+@media (max-width: 600px) {
+.social-buttons {
+flex-direction: column;
+align-items: center;
+}
+.social-buttons a {
+    width: 80%;
+}
+}
