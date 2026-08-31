@@ -15,26 +15,26 @@ header {
     top: 0;
     z-index: 1000;
     background-color: black;
-    border-bottom: 1px solid gold;
+    border-bottom: 1px solid #8A6A1F;
     padding: 15px 30px;
 }
 body{background-color: black;
-color: gold;
+color: #D4AF37;
 font-size: 30px;
 text-align: center;
 font-family: "Fat Grot", sans-serif;
 }
-h1{color: gold;
+h1{color: #D4AF37;
 font-size: 50px;
 margin: 50px;
-border: 3px solid gold;}
-h2{color:gold;}
+border: 3px solid #8A6A1F;}
+h2{color: #D4AF37;}
 .description{color:white;
 font-size: 20px;}
 .card {
     margin: 10px 20px;
     padding: 20px;
-    border: 2px solid gold;
+    border: 2px solid #8A6A1F;
     border-radius: 12px;
     flex: 1;
     box-shadow: none;
@@ -57,7 +57,7 @@ justify-content: center;
 gap: 20px;
 order: 2;}
 .navigation a{
-color: gold;
+color: #D4AF37;
 text-decoration: none;
 font-size: 20px;
 font-weight: normal;}
@@ -68,13 +68,13 @@ left: 0;
 bottom: 0;
 width: 0;
 height: 2px;
-background-color: gold;
+background-color: #D4AF37;
 transition: 0.3s;}
 .navigation a:hover{color:white;}
 .navigation a:hover::after{width: 100%}
 .button {
 display: inline-block;
-background-color: gold;
+background-color: #D4AF37;
 color: black;
 padding: 15px 30px;
 border-radius: 10px;
@@ -92,7 +92,7 @@ order: 1;}
 .about{margin: 50px auto;
 padding: 30px;
 max-width: 800px;
-border: 2px solid gold;}
+border: 2px solid #8A6A1F;}
 .about p{
 color: white;
 font-size: 20px;}
@@ -100,7 +100,7 @@ font-size: 20px;}
 margin: 50px auto;
 padding: 30px;
 max-width: 800px;
-border: 2px solid gold;}
+border: 2px solid #8A6A1F;}
 .contacts p{
 color: white;
 font-size: 20px;}
@@ -110,7 +110,7 @@ html {scroll-behavior: smooth;}
 margin: 80px auto;
 padding: 40px;
 max-width: 800px;
-border: 2px solid gold;
+border: 2px solid #8A6A1F;
 box-shadow: none;}
 .about h2,
 .contacts h2 {
@@ -138,18 +138,18 @@ margin-bottom: 40px;}
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    border: 2px solid gold;
+    border: 2px solid #8A6A1F;
     border-radius: 8px;
-    color: gold;
+    color: #D4AF37;
     text-decoration: none;
     transition: 0.3s;
 }
 .card-button:hover {
-    background-color: gold;
+    background-color: #D4AF37;
     color: black;
 }
 .price {
-    color: gold;
+    color: #D4AF37;
     font-weight: normal;
     font-size: 24px;
 }
@@ -335,15 +335,15 @@ flex-wrap: wrap;
 .social-buttons a {
 display: inline-block;
 padding: 12px 25px;
-border: 2px solid gold;
+border: 2px solid #8A6A1F;
 border-radius: 10px;
-color: gold;
+color: #D4AF37;
 text-decoration: none;
 font-size: 20px;
 transition: 0.3s;
 }
 .social-buttons a:hover {
-    background-color: gold;
+    background-color: #D4AF37;
     color: black;
     transform: translateY(-3px);
 }
@@ -360,7 +360,7 @@ align-items: center;
     margin: 60px auto;
     padding: 40px;
     max-width: 900px;
-    border: 1px solid gold;
+    border: 1px solid #8A6A1F;
     border-radius: 15px;
     box-shadow: none;
 }
@@ -372,7 +372,7 @@ align-items: center;
 }
 
 .about h3 {
-    color: gold;
+    color: #D4AF37;
     font-size: 28px;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -392,7 +392,7 @@ align-items: center;
 }
 
 .about h3:last-of-type + p {
-    color: gold;
+    color: #D4AF37;
     font-size: 25px;
     font-weight: normal;
     text-shadow: none;
