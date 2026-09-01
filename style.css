@@ -397,3 +397,134 @@ align-items: center;
     font-weight: normal;
     text-shadow: none;
 }
+.services-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px 60px;
+}
+
+.services-page > h2 {
+    text-align: center;
+    color: #D4AF37;
+    font-size: 46px;
+    margin: 20px 0 45px;
+    font-weight: normal;
+}
+
+.price-section {
+    margin: 55px 0;
+}
+
+.price-section h3 {
+    color: #D4AF37;
+    font-size: 34px;
+    font-weight: normal;
+    margin: 0 0 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #8A6A1F;
+}
+
+.price-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #8A6A1F;
+    border-radius: 10px;
+}
+
+.price-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+    background: #050505;
+}
+
+.price-table th {
+    color: #D4AF37;
+    font-size: 17px;
+    font-weight: normal;
+    text-align: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #8A6A1F;
+}
+
+.price-table th:first-child {
+    text-align: left;
+    width: 48%;
+}
+
+.price-table td {
+    color: white;
+    font-size: 16px;
+    line-height: 1.35;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+    vertical-align: middle;
+}
+
+.price-table tr:last-child td {
+    border-bottom: none;
+}
+
+.price-table td:first-child {
+    color: #f0d77a;
+}
+
+.price {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.note {
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.35;
+    margin-top: 5px;
+}
+
+.price-action {
+    text-align: center;
+    margin: 35px 0 10px;
+}
+
+.price-action .button {
+    display: inline-block;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .services-page {
+        margin: 30px auto;
+        padding: 0 12px 40px;
+    }
+
+    .services-page > h2 {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .price-section {
+        margin: 40px 0;
+    }
+
+    .price-section h3 {
+        font-size: 27px;
+    }
+
+    .price-table-wrap {
+        overflow-x: auto;
+    }
+
+    .price-table {
+        min-width: 720px;
+    }
+
+    .price-table th, .price-table td {
+        padding: 12px 9px;
+        font-size: 14px;
+    }
+
+    .note {
+        font-size: 12px;
+    }
+}
