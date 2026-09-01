@@ -20,6 +20,7 @@ body {
     font-size: 30px;
     text-align: center;
     font-family: Arial, sans-serif;
+    font-weight: 500;
 }
 
 /* =========================
@@ -123,6 +124,20 @@ h3,
 .navigation a,
 .button {
     font-family: "Fat Grot", Arial, sans-serif;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.description,
+.hero p,
+.card p,
+.about p,
+.contacts p,
+.preview-card p,
+.note {
+    font-weight: 500;
 }
 
 /* =========================
