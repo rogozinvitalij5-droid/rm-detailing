@@ -5,7 +5,27 @@
     font-style: normal;
     font-display: swap;
 }
-*{box-sizing: border-box;}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: #D4AF37;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Fat Grot", sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+
 header {
     display: flex;
     align-items: center;
@@ -18,19 +38,142 @@ header {
     border-bottom: 1px solid #8A6A1F;
     padding: 15px 30px;
 }
-body{background-color: black;
-color: #D4AF37;
-font-size: 30px;
-text-align: center;
-font-family: "Fat Grot", sans-serif;
+
+.logo {
+    text-align: left;
+    order: 1;
 }
-h1{color: #D4AF37;
-font-size: 50px;
-margin: 50px;
-border: 3px solid #8A6A1F;}
-h2{color: #D4AF37;}
-.description{color:white;
-font-size: 20px;}
+
+.logo h1 {
+    margin: 0;
+}
+
+.logo img {
+    width: 280px;
+    max-height: 80px;
+    object-fit: contain;
+    display: block;
+}
+
+.description {
+    color: white;
+    font-size: 20px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    order: 2;
+}
+
+.navigation a {
+    position: relative;
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #D4AF37;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: white;
+}
+
+.navigation a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1 {
+    color: #D4AF37;
+    font-size: 50px;
+    margin: 50px;
+    border: 3px solid #8A6A1F;
+}
+
+h2 {
+    color: #D4AF37;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.button {
+    display: inline-block;
+    background-color: #D4AF37;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 100px 20px;
+    margin: 30px auto 80px;
+    max-width: 1100px;
+}
+
+.hero h2 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-shadow: none;
+}
+
+.hero p {
+    color: white;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+/* =========================
+   SERVICES CARDS
+========================= */
+
+.services-title {
+    font-size: 42px;
+    margin: 0 0 40px;
+    text-shadow: none;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
     margin: 10px 20px;
     padding: 20px;
@@ -41,99 +184,37 @@ font-size: 20px;}
     transition: 0.3s;
     background-color: #111;
 }
-.card:hover{transform: translateY(-5px);
-box-shadow: none;}
-.cards{display: flex;
-gap:20px;
-justify-content: center;
-align-items: center;}
-@media (max-width: 600px){
-    .cards{
-        flex-direction: column;
-    }
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: none;
 }
-.navigation{display: flex;
-justify-content: center;
-gap: 20px;
-order: 2;}
-.navigation a{
-color: #D4AF37;
-text-decoration: none;
-font-size: 20px;
-font-weight: normal;}
-.navigation a::after{
-content: "";
-position: absolute;
-left: 0;
-bottom: 0;
-width: 0;
-height: 2px;
-background-color: #D4AF37;
-transition: 0.3s;}
-.navigation a:hover{color:white;}
-.navigation a:hover::after{width: 100%}
-.button {
-display: inline-block;
-background-color: #D4AF37;
-color: black;
-padding: 15px 30px;
-border-radius: 10px;
-text-decoration: none;
-transition: 0.3s;
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
-.button:hover {
-background-color: white;
-color: black;
-transform: scale(1.05);
+
+.card h2 {
+    font-size: 30px;
+    margin: 15px 0;
 }
-.logo h1{margin: 0;}
-.logo{text-align: left;
-order: 1;}
-.about{margin: 50px auto;
-padding: 30px;
-max-width: 800px;
-border: 2px solid #8A6A1F;}
-.about p{
-color: white;
-font-size: 20px;}
-.contacts {
-margin: 50px auto;
-padding: 30px;
-max-width: 800px;
-border: 2px solid #8A6A1F;}
-.contacts p{
-color: white;
-font-size: 20px;}
-html {scroll-behavior: smooth;}
-.about,
-.contacts {
-margin: 80px auto;
-padding: 40px;
-max-width: 800px;
-border: 2px solid #8A6A1F;
-box-shadow: none;}
-.about h2,
-.contacts h2 {
-font-size: 40px;
-margin-bottom: 30px;}
-.about p, .contacts p {
-color: white;
-font-size: 20px;
-line-height: 1.6;}
-.contacts p {margin: 20px;}
-.hero {
-padding: 100px 20px;
-margin: 30px auto 80px;    
-max-width: 1100px;}
-.hero h2 {
-font-size: 50px;
-margin-bottom: 20px;
-text-shadow: none;}
-.hero p {
-color: white;
-font-size: 22px;
-line-height: 1.5;
-margin-bottom: 40px;}
+
+.card p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.price {
+    color: #D4AF37;
+    font-weight: normal;
+    font-size: 24px;
+}
+
 .card-button {
     display: inline-block;
     margin-top: 15px;
@@ -144,219 +225,18 @@ margin-bottom: 40px;}
     text-decoration: none;
     transition: 0.3s;
 }
+
 .card-button:hover {
     background-color: #D4AF37;
     color: black;
 }
-.price {
-    color: #D4AF37;
-    font-weight: normal;
-    font-size: 24px;
-}
-.logo img {
-    width: 280px;
-    max-height: 80px;
-    object-fit: contain;
-    display: block;
-}
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-.card p {
-    color: white;
-    font-size: 18px;
-    line-height: 1.5;
-}
 
-.card h2 {
-    font-size: 30px;
-    margin: 15px 0;
-}
-.hero h2 {
-    font-size: 56px;
-    line-height: 1.1;
-    margin-bottom: 20px;
-    text-shadow: none;
-}
-.services-title {
-    font-size: 42px;
-    margin: 0 0 40px;
-    text-shadow: none;
-}
+/* =========================
+   ABOUT / CONTACTS
+========================= */
 
-@media (max-width: 600px) {
-
-    body {
-        font-size: 20px;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-    }
-
-    .logo {
-        align-items: center;
-        text-align: center;
-    }
-
-    .logo img {
-        width: 220px;
-        max-height: 70px;
-    }
-
-    .description {
-        margin: 5px 0;
-    }
-
-    .navigation {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .navigation a {
-        font-size: 18px;
-    }
-
-    .hero {
-        padding: 60px 15px;
-        margin: 0 auto 50px;
-    }
-
-    .hero h2 {
-        font-size: 34px;
-        line-height: 1.15;
-        margin-bottom: 20px;
-        text-shadow: none;
-    }
-
-    .hero p {
-        font-size: 19px;
-        line-height: 1.5;
-    }
-
-    .button {
-        padding: 12px 25px;
-        box-shadow: none;
-    }
-
-    .button:hover {
-        transform: scale(1.03);
-    }
-
-    .services-title {
-        font-size: 34px;
-        margin-bottom: 30px;
-    }
-
-    .cards {
-        flex-direction: column;
-        gap: 20px;
-        padding: 0 15px;
-    }
-
-    .card {
-        width: 100%;
-        margin: 0;
-    }
-
-    .card img {
-        height: 180px;
-    }
-
-    .card h2 {
-        font-size: 28px;
-    }
-
-    .card p {
-        font-size: 17px;
-    }
-
-    .card .price {
-        font-size: 22px;
-    }
-
-    .about,
-    .contacts {
-        margin: 50px 15px;
-        padding: 25px 20px;
-    }
-
-    .about h2,
-    .contacts h2 {
-        font-size: 34px;
-    }
-
-    .about p,
-    .contacts p {
-        font-size: 18px;
-    }
-    .about {
-    margin: 40px 15px;
-    padding: 25px 20px;
-    border-radius: 12px;
-    }
-
-    .about h2 {
-        font-size: 34px;
-        margin-bottom: 25px;
-        text-shadow: none;
-    }
-
-    .about h3 {
-        font-size: 24px;
-        margin-top: 30px;
-        margin-bottom: 15px;
-    }
-
-    .about p {
-        font-size: 17px;
-    line-height: 1.5;
-    }
-
-    .about h3:last-of-type + p {
-        font-size: 21px;
-        text-shadow: none;
-    }
-}
-
-.social-buttons {
-display: flex;
-justify-content: center;
-gap: 15px;
-margin: 30px auto;
-flex-wrap: wrap;
-}
-.social-buttons a {
-display: inline-block;
-padding: 12px 25px;
-border: 2px solid #8A6A1F;
-border-radius: 10px;
-color: #D4AF37;
-text-decoration: none;
-font-size: 20px;
-transition: 0.3s;
-}
-.social-buttons a:hover {
-    background-color: #D4AF37;
-    color: black;
-    transform: translateY(-3px);
-}
-@media (max-width: 600px) {
-.social-buttons {
-flex-direction: column;
-align-items: center;
-}
-.social-buttons a {
-    width: 80%;
-}
-}
-.about {
+.about,
+.contacts {
     margin: 60px auto;
     padding: 40px;
     max-width: 900px;
@@ -365,10 +245,10 @@ align-items: center;
     box-shadow: none;
 }
 
-.about h2 {
+.about h2,
+.contacts h2 {
     font-size: 42px;
     margin-bottom: 35px;
-    text-shadow: none;
 }
 
 .about h3 {
@@ -380,11 +260,16 @@ align-items: center;
     border-bottom: 1px solid rgba(255, 215, 0, 0.5);
 }
 
-.about p {
+.about p,
+.contacts p {
     color: white;
     font-size: 20px;
     line-height: 1.6;
     margin: 15px 0;
+}
+
+.contacts p {
+    margin: 20px;
 }
 
 .about h3:last-of-type {
@@ -397,6 +282,40 @@ align-items: center;
     font-weight: normal;
     text-shadow: none;
 }
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+.social-buttons a {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #8A6A1F;
+    border-radius: 10px;
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-buttons a:hover {
+    background-color: #D4AF37;
+    color: black;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   SERVICES PAGE
+========================= */
+
 .services-page {
     max-width: 1200px;
     margin: 50px auto;
@@ -469,7 +388,7 @@ align-items: center;
     color: #f0d77a;
 }
 
-.price {
+.price-table .price {
     text-align: center;
     white-space: nowrap;
 }
@@ -492,7 +411,194 @@ align-items: center;
     text-decoration: none;
 }
 
+/* =========================
+   SERVICES PREVIEW
+========================= */
+
+.services-preview {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.services-preview h2 {
+    color: #D4AF37;
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.preview-cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.preview-card {
+    flex: 1;
+    max-width: 340px;
+    padding: 30px 25px;
+    border: 1px solid #8A6A1F;
+    border-radius: 12px;
+    background: #050505;
+}
+
+.preview-card h3 {
+    color: #D4AF37;
+    font-size: 27px;
+    font-weight: normal;
+    margin: 0 0 15px;
+}
+
+.preview-card p {
+    color: white;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.services-button {
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 700px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo {
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 220px;
+        max-height: 70px;
+    }
+
+    .description {
+        margin: 5px 0;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navigation a {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: 60px 15px;
+        margin: 0 auto 50px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+        line-height: 1.15;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+    .button {
+        padding: 12px 25px;
+    }
+
+    .button:hover {
+        transform: scale(1.03);
+    }
+
+    .services-title {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .card h2 {
+        font-size: 28px;
+    }
+
+    .card p {
+        font-size: 17px;
+    }
+
+    .card .price {
+        font-size: 22px;
+    }
+
+    .about,
+    .contacts {
+        margin: 40px 15px;
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    .about h2,
+    .contacts h2 {
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
+
+    .about h3 {
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .about p,
+    .contacts p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .about h3:last-of-type + p {
+        font-size: 21px;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-buttons a {
+        width: 80%;
+    }
+
+    /* Services page */
+
     .services-page {
         margin: 30px auto;
         padding: 0 12px 40px;
@@ -519,7 +625,8 @@ align-items: center;
         min-width: 720px;
     }
 
-    .price-table th, .price-table td {
+    .price-table th,
+    .price-table td {
         padding: 12px 9px;
         font-size: 14px;
     }
@@ -527,91 +634,41 @@ align-items: center;
     .note {
         font-size: 12px;
     }
-}
 
-.services-preview {
-max-width: 1100px;
-margin: 80px auto;
-padding: 0 20px;
-text-align: center;
-}
+    /* Services preview */
 
-.services-preview h2 {
-color: #D4AF37;
-font-size: 40px;
-font-weight: normal;
-margin-bottom: 40px;
-}
+    .services-preview {
+        margin: 55px auto;
+        padding: 0 15px;
+    }
 
-.preview-cards {
-display: flex;
-gap: 25px;
-justify-content: center;
-}
+    .services-preview h2 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
 
-.preview-card {
-flex: 1;
-max-width: 340px;
-padding: 30px 25px;
-border: 1px solid #8A6A1F;
-border-radius: 12px;
-background: #050505;
-}
+    .preview-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
 
-.preview-card h3 {
-color: #D4AF37;
-font-size: 27px;
-font-weight: normal;
-margin: 0 0 15px;
-}
+    .preview-card {
+        max-width: 500px;
+        width: 100%;
+        padding: 25px 20px;
+    }
 
-.preview-card p {
-color: white;
-font-size: 17px;
-line-height: 1.5;
-margin: 0;
-}
+    .preview-card h3 {
+        font-size: 24px;
+    }
 
-.services-button {
-display: inline-block;
-margin-top: 40px;
-text-decoration: none;
-}
+    .preview-card p {
+        font-size: 16px;
+    }
 
-@media (max-width: 700px) {
-.services-preview {
-margin: 55px auto;
-padding: 0 15px;
-}
-
-.services-preview h2 {
-    font-size: 32px;
-    margin-bottom: 25px;
-}
-
-.preview-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.preview-card {
-    max-width: 500px;
-    width: 100%;
-    padding: 25px 20px;
-}
-
-.preview-card h3 {
-    font-size: 24px;
-}
-
-.preview-card p {
-    font-size: 16px;
-}
-
-.services-button {
-    width: 100%;
-    max-width: 500px;
-}
-
+    .services-button {
+        width: 100%;
+        max-width: 500px;
+    }
 }
