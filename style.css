@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600&display=swap');*/
 /*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');*/
 
 @font-face {
@@ -22,7 +22,7 @@ body {
     color: #D4AF37;
     font-size: 30px;
     text-align: center;
-    font-family: "Inter", sans-serif;
+    font-family: "Fat Grot", sans-serif;
     font-weight: 500;
 }
 
