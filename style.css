@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 @font-face {
     font-family: "Fat Grot";
     src: url("./font.ttf") format("truetype");
@@ -5,8 +7,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 * {
     box-sizing: border-box;
