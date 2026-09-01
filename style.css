@@ -211,8 +211,10 @@ h2 {
 
 .price {
     color: #D4AF37;
-    font-weight: normal;
-    font-size: 24px;
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.35);
 }
 
 .card-button {
@@ -556,7 +558,8 @@ h2 {
     }
 
     .card .price {
-        font-size: 22px;
+        font-size: 23px;
+        font-weight: bold;
     }
 
     .about,
