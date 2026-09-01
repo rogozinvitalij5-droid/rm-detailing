@@ -6,6 +6,8 @@
     font-display: swap;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -19,7 +21,7 @@ body {
     color: #D4AF37;
     font-size: 30px;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
 }
 
@@ -123,22 +125,14 @@ h2,
 h3,
 .navigation a,
 .button {
-    font-family: "Fat Grot", Arial, sans-serif;
+    font-family: "Fat Grot", sans-serif;
 }
 
 /* =========================
    TEXT
 ========================= */
 
-.description,
-.hero p,
-.card p,
-.about p,
-.contacts p,
-.preview-card p,
-.note {
-    font-weight: 500;
-}
+
 
 /* =========================
    BUTTONS
