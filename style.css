@@ -815,7 +815,7 @@ h3,
         transparent
     );
     transform: skewX(-20deg);
-    animation: logoGlare 1.2s ease-in-out infinite;
+    animation: logoGlare 2s ease-in-out 2;
 }
 
 @keyframes logoGlare {
