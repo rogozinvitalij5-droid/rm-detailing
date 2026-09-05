@@ -792,7 +792,7 @@ h3,
     color: #D4AF37;
 }
 .logo-shine {
-    animation: logoShine 1.5s ease-in-out infinite;
+    animation: logoShine 0.85s ease-in-out infinite;
 }
 
 @keyframes logoShine {
