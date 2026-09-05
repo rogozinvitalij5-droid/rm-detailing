@@ -9,6 +9,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "RobotoCondensed";
+    src: url("./RobotoCondensed.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -229,6 +237,7 @@ h3,
     color: white;
     font-size: 18px;
     line-height: 1.5;
+    font-family: "RobotoCondensed", sans-serif;
 }
 
 .price {
@@ -237,6 +246,7 @@ h3,
     font-weight: bold;
     margin-top: 15px;
     text-shadow: 0 0 8px rgba(212, 175, 55, 0.35);
+    font-family: "RobotoCondensed", sans-serif;
 }
 
 .card-button {
