@@ -517,7 +517,7 @@ h3,
 @media (max-width: 700px) {
 
     body {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     header {
@@ -561,7 +561,7 @@ h3,
     }
 
     .hero p {
-        font-size: 19px;
+        font-size: 17px;
         line-height: 1.5;
     }
 
