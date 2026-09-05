@@ -16,24 +16,24 @@ function startWash() {
 
     setTimeout(() => {
         wash.classList.add("wash-active");
-    }, 50);
+    }, 30);
 
     setTimeout(() => {
         wash.classList.add("wash-finish");
-    }, 1800);
+    }, 350);
 
     setTimeout(() => {
         wash.remove();
-    }, 3000);
+    }, 900);
 }
-setTimeout(() => {
-    wash.classList.add("wash-active");
-}, 50);
+// setTimeout(() => {
+//     wash.classList.add("wash-active");
+// }, 50);
 
-setTimeout(() => {
-    wash.classList.add("wash-finish");
-}, 700);
+// setTimeout(() => {
+//     wash.classList.add("wash-finish");
+// }, 700);
 
-setTimeout(() => {
-    wash.remove();
-}, 1400);
+// setTimeout(() => {
+//     wash.remove();
+// }, 1400);

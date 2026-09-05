@@ -737,7 +737,7 @@ h3,
     pointer-events: none;
     background: #e6e6e2;
     transform: translateY(-100%);
-    transition: transform 0.45s ease-out;
+    transition: transform 0.25s ease-out;
 }
 
 .wash-effect::before,
@@ -775,7 +775,7 @@ h3,
 
 .wash-finish {
     transform: translateY(100%);
-    transition: transform 0.65s ease-in;
+    transition: transform 0.35s ease-in;
 }
 .wash-button {
     display: block;
