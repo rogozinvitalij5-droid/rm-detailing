@@ -4,14 +4,19 @@ function startWash() {
 
     document.body.appendChild(wash);
 
-    const logo = document.querySelector(".logo img");
+    const logo = document.querySelector(".logo");
 
     if (logo) {
+        logo.classList.remove("logo-shine");
+
+        // Перезапускаем анимацию
+        void logo.offsetWidth;
+
         logo.classList.add("logo-shine");
 
         setTimeout(() => {
             logo.classList.remove("logo-shine");
-        }, 2000);
+        }, 4500);
     }
 
     setTimeout(() => {
@@ -26,14 +31,3 @@ function startWash() {
         wash.remove();
     }, 900);
 }
-// setTimeout(() => {
-//     wash.classList.add("wash-active");
-// }, 50);
-
-// setTimeout(() => {
-//     wash.classList.add("wash-finish");
-// }, 700);
-
-// setTimeout(() => {
-//     wash.remove();
-// }, 1400);
