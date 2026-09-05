@@ -11,7 +11,7 @@ function startWash() {
 
         setTimeout(() => {
             logo.classList.remove("logo-shine");
-        }, 30000);
+        }, 2000);
     }
 
     setTimeout(() => {

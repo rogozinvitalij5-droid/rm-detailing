@@ -791,16 +791,38 @@ h3,
 .wash-button:hover {
     color: #D4AF37;
 }
-.logo-shine {
-    animation: logoShine 0.85s ease-in-out infinite;
+.logo {
+    position: relative;
+    overflow: hidden;
 }
 
-@keyframes logoShine {
-    0%, 100% {
-        filter: brightness(1);
+.logo-shine {
+    position: relative;
+}
+
+.logo-shine::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 35%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.8),
+        transparent
+    );
+    transform: skewX(-20deg);
+    animation: logoGlare 1.2s ease-in-out infinite;
+}
+
+@keyframes logoGlare {
+    0% {
+        left: -100%;
     }
 
-    50% {
-        filter: brightness(1.8) drop-shadow(0 0 12px #D4AF37);
+    100% {
+        left: 150%;
     }
 }
