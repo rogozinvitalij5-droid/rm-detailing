@@ -827,3 +827,52 @@ h3,
         left: 150%;
     }
 }
+
+/* СЕКРЕТНАЯ МАШИНКА */
+
+.secret-car {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99998;
+    width: 90px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s;
+}
+
+.secret-car img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.secret-car:hover {
+    transform: scale(1.08);
+}
+
+.secret-car.drive {
+    animation: carDrive 2s ease-in-out forwards;
+}
+
+@keyframes carDrive {
+    0% {
+        right: 15px;
+        transform: scaleX(1);
+    }
+
+    45% {
+        right: 50%;
+        transform: scaleX(1);
+    }
+
+    50% {
+        right: 50%;
+        transform: scaleX(-1);
+    }
+
+    100% {
+        right: 110%;
+        transform: scaleX(-1);
+    }
+}

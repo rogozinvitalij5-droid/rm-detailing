@@ -31,3 +31,18 @@ function startWash() {
         wash.remove();
     }, 900);
 }
+function secretCarWash(car) {
+    if (car.classList.contains("drive")) {
+        return;
+    }
+
+    car.classList.add("drive");
+
+    setTimeout(() => {
+        startWash();
+    }, 1800);
+
+    setTimeout(() => {
+        car.classList.remove("drive");
+    }, 4000);
+}
