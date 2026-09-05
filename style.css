@@ -395,17 +395,17 @@ h3,
 
 .price-table {
     width: 100%;
-    min-width: 760px;
+    min-width: 900px;
     border-collapse: collapse;
     background: #050505;
 }
 
 .price-table th {
     color: #D4AF37;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: normal;
     text-align: center;
-    padding: 15px 10px;
+    padding: 18px 12px;
     border-bottom: 1px solid #8A6A1F;
 }
 
@@ -416,9 +416,9 @@ h3,
 
 .price-table td {
     color: white;
-    font-size: 16px;
-    line-height: 1.35;
-    padding: 15px 10px;
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 18px 12px;
     border-bottom: 1px solid rgba(212, 175, 55, 0.25);
     vertical-align: middle;
 }
@@ -439,9 +439,9 @@ h3,
 .note {
     display: block;
     color: #aaa;
-    font-size: 13px;
-    line-height: 1.35;
-    margin-top: 5px;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-top: 6px;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
 }
