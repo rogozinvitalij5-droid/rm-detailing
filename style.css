@@ -10,16 +10,16 @@
 }
 
 @font-face {
-    font-family: "RobotoCondensed";
-    src: url("./RobotoCondensed.ttf");
+    font-family: "Oswald";
+    src: url("./Oswald.ttf");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Roboto Condensed";
-    src: url("./RobotoCondensed-Bold.ttf") format("truetype");
+    font-family: "Oswald";
+    src: url("./OswaldBold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -245,7 +245,7 @@ h3,
     color: white;
     font-size: 18px;
     line-height: 1.5;
-    font-family: "RobotoCondensed", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: 400;
 }
 
@@ -255,7 +255,7 @@ h3,
     font-weight: 700;
     margin-top: 15px;
     text-shadow: 0 0 8px rgba(212, 175, 55, 0.35);
-    font-family: "RobotoCondensed", sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 .card-button {
