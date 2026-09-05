@@ -360,7 +360,7 @@ h3,
 ========================= */
 
 .services-page {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 50px auto;
     padding: 0 20px 60px;
 }
@@ -395,7 +395,7 @@ h3,
 
 .price-table {
     width: 100%;
-    min-width: 700px;
+    min-width: 1400px;
     border-collapse: collapse;
     background: #050505;
 }
