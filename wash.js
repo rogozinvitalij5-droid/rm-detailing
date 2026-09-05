@@ -26,3 +26,14 @@ function startWash() {
         wash.remove();
     }, 3000);
 }
+setTimeout(() => {
+    wash.classList.add("wash-active");
+}, 50);
+
+setTimeout(() => {
+    wash.classList.add("wash-finish");
+}, 700);
+
+setTimeout(() => {
+    wash.remove();
+}, 1400);
