@@ -46,3 +46,16 @@ function secretCarWash(car) {
         car.classList.remove("drive");
     }, 4000);
 }
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+
+    if (loader) {
+        setTimeout(() => {
+            loader.classList.add("hide");
+
+            setTimeout(() => {
+                loader.remove();
+            }, 600);
+        }, 900);
+    }
+});

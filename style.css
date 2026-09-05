@@ -876,3 +876,40 @@ h3,
         transform: scaleX(-1);
     }
 }
+
+/* ЗАГРУЗОЧНЫЙ ЭКРАН */
+
+#loader {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+#loader img {
+    width: 280px;
+    max-width: 70%;
+    animation: loaderLogo 1.8s ease-in-out infinite;
+}
+
+#loader.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes loaderLogo {
+    0%, 100% {
+        opacity: 0.65;
+        transform: scale(0.96);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
