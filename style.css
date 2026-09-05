@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: "Fat Grot";
-    src: url("./font.ttf") format("truetype");
+    src: url("./fixed.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
