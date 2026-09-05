@@ -395,7 +395,7 @@ h3,
 
 .price-table {
     width: 100%;
-    min-width: 1600px;
+    min-width: 1000px;
     border-collapse: collapse;
     background: #050505;
 }
