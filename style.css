@@ -720,9 +720,87 @@ h3,
     }
 }
 
-/*fontfixtest*/
+/*ПОЧИНКА ШРИФТА*/
+
 .test-y {
     font-family: "Fat Grot", sans-serif !important;
     font-weight: 300 !important;
     font-size: 50px;
+}
+
+/* СЕКРЕТНЫЙ РЕЖИМ МОЙКИ */
+
+.wash-effect {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    pointer-events: none;
+    background: white;
+    transform: translateY(100%);
+    transition: transform 0.8s ease;
+}
+
+.wash-effect::before,
+.wash-effect::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: white;
+    border-radius: 50%;
+}
+
+.wash-effect::before {
+    top: -100px;
+    left: 10%;
+    box-shadow:
+        250px 50px 0 white,
+        500px -30px 0 white,
+        750px 80px 0 white,
+        1000px 0 0 white;
+}
+
+.wash-effect::after {
+    bottom: -150px;
+    right: 10%;
+    box-shadow:
+        -250px 50px 0 white,
+        -500px -20px 0 white,
+        -750px 60px 0 white;
+}
+
+.wash-active {
+    transform: translateY(0);
+}
+
+.wash-finish {
+    transform: translateY(-100%);
+}
+.wash-button {
+    display: block;
+    width: fit-content;
+    margin: 50px auto 20px;
+    color: #333;
+    font-family: "Oswald", sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wash-button:hover {
+    color: #D4AF37;
+}
+.logo-shine {
+    animation: logoShine 1.5s ease-in-out infinite;
+}
+
+@keyframes logoShine {
+    0%, 100% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(1.8) drop-shadow(0 0 12px #D4AF37);
+    }
 }
