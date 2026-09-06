@@ -81,6 +81,28 @@ function secretCarWash(car) {
 //         }, 600);
 //     }, 900);
 // });
+// window.addEventListener("load", function () {
+//     const loader = document.getElementById("loader");
+
+//     if (!loader) {
+//         return;
+//     }
+
+//     if (localStorage.getItem("rmLoaderShown")) {
+//         loader.remove();
+//         return;
+//     }
+
+//     localStorage.setItem("rmLoaderShown", "true");
+
+//     setTimeout(() => {
+//         loader.classList.add("hide");
+
+//         setTimeout(() => {
+//             loader.remove();
+//         }, 600);
+//     }, 900);
+// });
 window.addEventListener("load", function () {
     const loader = document.getElementById("loader");
 
@@ -88,12 +110,12 @@ window.addEventListener("load", function () {
         return;
     }
 
-    if (localStorage.getItem("rmLoaderShown")) {
+    if (sessionStorage.getItem("rmLoaderShown")) {
         loader.remove();
         return;
     }
 
-    localStorage.setItem("rmLoaderShown", "true");
+    sessionStorage.setItem("rmLoaderShown", "true");
 
     setTimeout(() => {
         loader.classList.add("hide");
