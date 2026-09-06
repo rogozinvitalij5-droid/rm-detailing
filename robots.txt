@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rogozinvitalij5-droid.github.io/rm-detailing/sitemap.xml
