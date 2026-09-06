@@ -510,20 +510,19 @@ h3,
     text-decoration: none;
 }
 
-/* =========================
-   MOBILE
-========================= */
+/*MOBILE*/
 
 @media (max-width: 700px) {
 
     body {
         font-size: 18px;
+        overflow-x: hidden;
     }
 
     header {
         flex-direction: column;
-        gap: 15px;
-        padding: 15px;
+        gap: 12px;
+        padding: 12px 15px;
     }
 
     .logo {
@@ -532,55 +531,65 @@ h3,
     }
 
     .logo img {
-        width: 220px;
-        max-height: 70px;
+        width: 200px;
+        max-height: 65px;
     }
 
     .description {
-        margin: 5px 0;
+        margin: 4px 0;
+        font-size: 16px;
     }
 
     .navigation {
         flex-wrap: wrap;
-        gap: 15px;
+        justify-content: center;
+        gap: 10px 15px;
     }
 
     .navigation a {
-        font-size: 18px;
+        font-size: 17px;
     }
 
+    /* Главный экран */
+
     .hero {
-        padding: 60px 15px;
-        margin: 0 auto 50px;
+        width: 100%;
+        padding: 45px 15px;
+        margin: 0 auto 40px;
     }
 
     .hero h2 {
-        font-size: 29px;
-        line-height: 1.15;
-        margin-bottom: 20px;
+        font-size: 26px;
+        line-height: 1.2;
+        margin-bottom: 18px;
     }
 
     .hero p {
-        font-size: 17px;
-        line-height: 1.5;
+        font-size: 16px;
+        line-height: 1.45;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .button {
-        padding: 12px 25px;
+        padding: 11px 22px;
+        font-size: 17px;
     }
 
     .button:hover {
         transform: scale(1.03);
     }
 
+    /* Услуги */
+
     .services-title {
-        font-size: 34px;
-        margin-bottom: 30px;
+        font-size: 30px;
+        margin-bottom: 25px;
     }
 
     .cards {
         flex-direction: column;
-        gap: 20px;
+        gap: 18px;
         padding: 0 15px;
     }
 
@@ -590,49 +599,51 @@ h3,
     }
 
     .card img {
-        height: 180px;
+        height: 170px;
     }
 
     .card h2 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .card p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .card .price {
-        font-size: 23px;
+        font-size: 21px;
         font-weight: bold;
     }
 
+    /* О нас / Контакты */
+
     .about,
     .contacts {
-        margin: 40px 15px;
-        padding: 25px 20px;
+        margin: 35px 15px;
+        padding: 22px 18px;
         border-radius: 12px;
     }
 
     .about h2,
     .contacts h2 {
-        font-size: 34px;
-        margin-bottom: 25px;
+        font-size: 30px;
+        margin-bottom: 22px;
     }
 
     .about h3 {
-        font-size: 24px;
-        margin-top: 30px;
-        margin-bottom: 15px;
+        font-size: 22px;
+        margin-top: 25px;
+        margin-bottom: 12px;
     }
 
     .about p,
     .contacts p {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 1.5;
     }
 
     .about h3:last-of-type + p {
-        font-size: 21px;
+        font-size: 19px;
     }
 
     .social-buttons {
@@ -647,25 +658,26 @@ h3,
     /* Services page */
 
     .services-page {
-        margin: 30px auto;
-        padding: 0 12px 40px;
+        margin: 25px auto;
+        padding: 0 10px 35px;
     }
 
     .services-page > h2 {
-        font-size: 34px;
-        margin-bottom: 30px;
+        font-size: 30px;
+        margin-bottom: 25px;
     }
 
     .price-section {
-        margin: 40px 0;
+        margin: 35px 0;
     }
 
     .price-section h3 {
-        font-size: 27px;
+        font-size: 25px;
     }
 
     .price-table-wrap {
         overflow-x: auto;
+        max-width: 100%;
     }
 
     .price-table {
@@ -674,7 +686,7 @@ h3,
 
     .price-table th,
     .price-table td {
-        padding: 12px 9px;
+        padding: 11px 8px;
         font-size: 14px;
     }
 
@@ -685,13 +697,13 @@ h3,
     /* Services preview */
 
     .services-preview {
-        margin: 55px auto;
+        margin: 45px auto;
         padding: 0 15px;
     }
 
     .services-preview h2 {
-        font-size: 32px;
-        margin-bottom: 25px;
+        font-size: 29px;
+        margin-bottom: 22px;
     }
 
     .preview-cards {
@@ -703,15 +715,16 @@ h3,
     .preview-card {
         max-width: 500px;
         width: 100%;
-        padding: 25px 20px;
+        padding: 22px 18px;
     }
 
     .preview-card h3 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .preview-card p {
-        font-size: 16px;
+        font-size: 15px;
+        line-height: 1.45;
     }
 
     .services-button {
