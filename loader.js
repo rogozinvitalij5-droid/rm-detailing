@@ -5,11 +5,27 @@ window.addEventListener("load", function () {
         return;
     }
 
-    setTimeout(() => {
-        loader.classList.add("hide");
+    const navigation = performance.getEntriesByType("navigation")[0];
+    const isReload = navigation && navigation.type === "reload";
+
+    // Первый вход на сайт
+    const firstVisit = !sessionStorage.getItem("rmSiteVisited");
+
+    // Первый вход или обновление страницы
+    if (firstVisit || isReload) {
+        sessionStorage.setItem("rmSiteVisited", "true");
 
         setTimeout(() => {
-            loader.remove();
-        }, 600);
-    }, 900);
+            loader.classList.add("hide");
+
+            setTimeout(() => {
+                loader.remove();
+            }, 600);
+        }, 900);
+
+        return;
+    }
+
+    // Переход между страницами сайта
+    loader.remove();
 });
