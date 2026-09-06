@@ -315,6 +315,10 @@ h3,
     margin: 20px;
 }
 
+.contacts a {
+    white-space: nowrap;
+}
+
 .about h3:last-of-type {
     margin-top: 45px;
 }
@@ -645,6 +649,11 @@ h3,
         font-size: 16px;
         line-height: 1.5;
     }
+
+    .contacts a {
+    white-space: nowrap;
+    font-size: 18px;
+}
 
     .about h3:last-of-type + p {
         font-size: 19px;
